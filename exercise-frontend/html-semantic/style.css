@@ -1,0 +1,164 @@
+:root {
+  --main-color: #303337;
+}
+
+/* GENERAL */
+body {
+  font: 16px/1.7 Open Sans, Helvetica Neue, Helvetica, arial;
+  color: var(--main-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+a:hover {
+  color: #999;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+header {
+  /* height: 4.0625; */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  /* float: left; */
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  /* float: right; */
+}
+
+.nav__item {
+  float: left;
+  line-height: 3.75rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.hero {
+  background-image: url("https://www.sea.con.img.promo-sea.ad322f68.jpg");
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  height: 45rem;
+  position: relative;
+}
+
+.hero__text {
+  position: absolute;
+  text-align: center;
+  bottom: 20%;
+  width: 100%;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 1.35rem;
+  color: #fff;
+}
+
+/* MISSION */
+
+.section__heading {
+  margin: 5rem 0 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.mission_subheading {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #757575;
+}
+
+.mission__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.mission__cards__item {
+  background-image: url("https://www.sea.com/img/thumb-story.b8370be3.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.mission__cards__item::after {
+  background-color: rgba(0, 0, 0, 0.45);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.mission__cards__item > p {
+  color: #fff;
+  z-index: 1;
+}
+
+.mission__cards__item > p:first-child {
+  /* text-align: center; */
+  font-size: 1.5rem;
+}
+
+/* UPDATES ========= */
+.updates__container {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.updates__item > h4 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .mission__cards {
+    flex-direction: row;
+  }
+  /* .updates__container {
+    grid-template-columns: 1fr 1fr;
+  } */
+}
+
+@media screen and (min-width: 1000px) {
+  .updates__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

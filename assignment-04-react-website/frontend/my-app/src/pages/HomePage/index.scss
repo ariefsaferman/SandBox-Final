@@ -1,0 +1,95 @@
+.greet__section {
+  .greet__title {
+    text-align: left;
+    font-family: "Montserat", sans-serif;
+  }
+}
+
+.balance__section {
+  font-family: "Montserat", sans-serif;
+  .balance__title {
+    text-align: right;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    font-size: 20px;
+    font-size: 55px;
+  }
+}
+
+.table__section {
+  font-family: "Montserat", sans-serif;
+  // margin-top: 10.375rem;
+
+  thead {
+    line-height: 49px;
+
+    th {
+      margin-left: 20px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+
+  tbody {
+    font-family: "Montserat", sans-serif;
+    tr {
+      td {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.2px;
+        color: #252b42;
+      }
+    }
+  }
+}
+
+.sort__section {
+  .wrapp__boundary {
+    margin-top: 8rem;
+  }
+
+  .text__color {
+    color: #737373;
+  }
+
+  .show__sort {
+    height: 50px;
+    width: 211px;
+    background-color: #f9f9f9;
+  }
+
+  .sortBy__sort {
+    height: 50px;
+    width: 170px;
+    background-color: #f9f9f9;
+  }
+
+  .sortDir__sort {
+    height: 50px;
+    width: 170px;
+    background-color: #f9f9f9;
+  }
+
+  .search__sort {
+    height: 50px;
+    background-color: #f9f9f9;
+  }
+
+  .border__search {
+    border-left: 0;
+  }
+
+  .bg__color {
+    background-color: #f9f9f9;
+  }
+}

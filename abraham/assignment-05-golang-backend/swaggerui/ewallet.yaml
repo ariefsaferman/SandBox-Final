@@ -1,0 +1,520 @@
+openapi: 3.0.3
+info:
+  title: E-Wallet Backend
+  description: |-
+    This is an E-Wallet Backend API based on the Assignment Golang Backend documentation. This API is built using RESTful guidelines and includes authentication, authorization, and e-wallet functionalities, such as top up, transfer, and viewing transactions. All endpoints other than register and login are protected using JSON Web Tokens (JWT). In order to use the protected endpoints, register an account, login, and use the provided token to authorize before proceeding. The given token is only valid for 60 minutes.
+    
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: yusuf.kristanto@shopee.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+servers:
+  - url: http://localhost:8080
+tags:
+  - name: auth
+    description: Login using JWT
+  - name: profile
+    description: Get details about profile
+  - name: transaction
+    description: Make transactions using your e-wallet account
+paths:
+  /register:
+    post: 
+      tags: 
+        - auth 
+      summary: Create User 
+      description: Create User
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterRequest'
+      responses:
+        '200':
+          description: Successful operation 
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RegisterResponse'
+        '500':
+          $ref: '#/components/responses/500'
+  /login:
+    post:
+      tags:
+        - auth
+      summary: Login using JWT
+      description: Login using JWT
+      requestBody:
+        description: Login into existing account using JWT
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoginResponse'
+        '400':
+          $ref: '#/components/responses/400'
+  /profile:
+    get:
+      tags:
+        - profile
+      summary: Get details about profile
+      description: Get details about wallet and user
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserDetailsResponse'
+        '401':
+          $ref: '#/components/responses/401'
+      security:
+        - bearerAuth: []
+  /transactions/top-up:
+    post:
+      tags:
+        - transaction
+      summary: Make a top up transaction to your account
+      description: Post a new top up transaction
+      requestBody:
+        description: Minimum top up amount is 50.000 and maximum is 10.000.000. Method ranges from 1 to 3.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TopUpRequest'
+      responses:
+        '200':
+          description: Succesful operation to top up wallet
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TopUpResponse'
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+      security:
+        - bearerAuth: []
+  /transactions/transfer:
+     post:
+      tags:
+        - transaction
+      summary: Make a transfer transaction to another account
+      description: Post a new transfer transaction
+      requestBody:
+        description: Minimum transfer amount is 1.000 and maximum is 50.000.000. Method ranges from 1 to 3.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TransferRequest'
+      responses:
+        '200':
+          description: Succesful operation to top up wallet
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TransferResponse'
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+      security:
+        - bearerAuth: []
+  /transactions:
+    get:
+      tags:
+        - transaction
+      summary: Get transactions of a logged in user
+      description: Get only the transactions of the user that is logged in
+      parameters:
+        - in: query
+          name: s
+          schema:
+            type: string
+        - in: query
+          name: sort
+          schema:
+            type: string
+        - in: query
+          name: sortBy
+          schema:
+            type: string
+        - in: query
+          name: page
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful operation to get books
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TransactionResponse'
+        '401':
+          $ref: '#/components/responses/401'
+      security:
+        - bearerAuth: []
+components:
+  schemas:
+    RegisterRequest:
+      required:
+        - name
+        - email
+        - password
+      type: object
+      properties:
+        name:
+          type: string
+          example: "Michael Jordan"
+        email:
+          type: string
+          example: "michaeljordan@bulls.com"
+        password:
+          type: string
+          example: "goatjordan"
+    RegisterResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/RegisterData'
+        error:
+          type: boolean
+          example: false
+        errorMessage:
+          type: string
+          example: ""
+        message: 
+          type: string
+          example: "success"
+        statusCode:
+          type: integer
+          example: 200
+    RegisterData:
+      type: object
+      properties:
+        id: 
+          type: integer
+          example: 1
+        name: 
+          type: string
+          example: Michael Jordan
+        email:
+          type: string
+          example: michaeljordan@bulls.com
+    TopUpRequest:
+      required:
+        - amount
+        - method
+      type: object
+      properties:
+        amount:
+          type: integer
+          example: 100000
+        method:
+          type: integer
+          example: 1
+    TransferRequest:
+      required:
+        - recipient
+        - amount
+      type: object
+      properties:
+        recipient:
+          type: integer
+          example: 777002
+        amount:
+          type: integer
+          example: 100000
+        description:
+          type: string
+          example: 'for your vacation'
+    TopUpData:
+      type: object
+      properties:
+        id: 
+          type: integer
+          example: 1
+        sender:
+          type: integer
+          example: 777001
+        recipient:
+          type: integer
+          example: 777001
+        amount:
+          type: integer
+          example: 100000
+        description: 
+          type: string
+          example: "Top up from Bank Transfer"
+        created_at:
+          type: string 
+          example: "2022-09-09T16:28:49.083280722+07:00"
+    UserData:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        name: 
+          type: string
+          example: "Michael Jordan"
+        email:
+          type: string
+          example: "michaeljordan@bulls.com"
+        created_at: 
+          type: string
+          example: "2022-09-09T15:41:03.646166+07:00"
+        deleted_at:
+          type: string
+          example: "null"
+    UserDetailsData:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        number:
+          type: integer
+          example: 777001
+        balance:
+          type: integer
+          example: 0
+        user_id:
+          type: integer
+          example: 1
+        user:
+          $ref: '#/components/schemas/UserData'
+    UserDetailsResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/UserDetailsData'
+        error:
+          type: boolean
+          example: false
+        errorMessage:
+          type: string
+          example: ""
+        message: 
+          type: string
+          example: "success"
+        statusCode:
+          type: integer
+          example: 200
+    TransferData:
+      type: object
+      properties:
+        id: 
+          type: integer
+          example: 1
+        sender:
+          type: integer
+          example: 777001
+        recipient:
+          type: integer
+          example: 777002
+        amount:
+          type: integer
+          example: 100000
+        description: 
+          type: string
+          example: "for your vacationr"
+        created_at:
+          type: string 
+          example: "2022-09-09T16:28:49.083280722+07:00"
+    TransferResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/TransferData'
+        error:
+          type: boolean
+          example: false
+        errorMessage:
+          type: string
+          example: ""
+        message: 
+          type: string
+          example: "success"
+        statusCode:
+          type: integer
+          example: 200
+    Transaction:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        sender:
+          type: integer
+          example: 777001
+        recipient:
+          type: integer
+          example: 777002
+        amount:
+          type: integer
+          example: 5000
+        description:
+          type: string
+          example: "vacation"
+        created_at:
+          type: string
+          example: "2022-09-09T16:45:00.176149+07:00"
+    TransactionData:
+      type: array
+      items:
+        $ref: '#/components/schemas/Transaction'
+    TransactionResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/TransactionData'
+        error:
+          type: boolean
+          example: false
+        errorMessage:
+          type: string
+          example: ""
+        message: 
+          type: string
+          example: "success"
+        statusCode:
+          type: integer
+          example: 200
+    TopUpResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/TopUpData'
+        error:
+          type: boolean
+          example: false
+        errorMessage:
+          type: string
+          example: ""
+        message: 
+          type: string
+          example: "success"
+        statusCode:
+          type: integer
+          example: 200
+    LoginRequest:
+      required:
+        - email
+        - password
+      type: object
+      properties:
+        email:
+          type: string
+          example: "onepunchman@anime.com"
+        password:
+          type: string
+          example: "betterthangoku"
+    LoginResponse:
+      type: object
+      properties: 
+        data: 
+          $ref: '#/components/schemas/TokenID'
+        error:
+          type: boolean
+          example: false
+        errorMessage:
+          type: string  
+          example: ""
+        message: 
+          type: string
+          example: 'success'
+        statusCode:
+          type: integer
+          example: 200
+    TokenID:
+      type: object
+      properties:
+        token_id:
+          type: string
+          example: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJTRUEgQUJLIEFQSSIsImV4cCI6MTY2MjUzNTEzNywiaWF0IjoxNjYyNTMxNTM3LCJ1c2VyIjp7ImlkIjoyLCJuYW1lIjoiam9obiBkb2UiLCJlbWFpbCI6ImFiY2RlZmdAZ21haWwuY29tIiwicGhvbmUiOiIxMjM0NTY3OCJ9fQ.Pd0K5yxfn6vwzs5uDwTJS2Z92TLjv_KSNZxuiwBDeXs'
+  responses:
+    '400':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: string
+                example: "null"
+              statusCode:
+                type: integer
+                example: 400
+              message:
+                type: string
+                example: 'Bad Request'
+              error:
+                type: boolean
+                example: true
+              errorMessage:
+                type: string
+                example: 'invalid password'
+    '401':
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: string
+                example: "null"
+              statusCode:
+                type: integer
+                example: 401
+              message:
+                type: string
+                example: 'Unauthorized'
+              error:
+                type: boolean
+                example: true
+              errorMessage:
+                type: string
+                example: 'Invalid access token'
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: string
+                example: "null"
+              statusCode:
+                type: integer
+                example: 400
+              message:
+                type: string
+                example: 'Internal Server Error'
+              error:
+                type: boolean
+                example: true
+              errorMessage:
+                type: string
+                example: 'internal server error'
+    
+  securitySchemes:
+    bearerAuth:            # arbitrary name for the security scheme
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

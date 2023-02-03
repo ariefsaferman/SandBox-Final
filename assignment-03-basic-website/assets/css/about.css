@@ -1,0 +1,44 @@
+:root {
+  --primary: #0042c8;
+  --primary-text: #152c5b;
+  --secondary-text: #717171;
+  --gray-3: #828282;
+}
+
+.indent {
+  gap: 2rem;
+}
+
+.bg__dev {
+  background-color: #f8f6f6;
+}
+
+.navbar-nav .nav-item .active {
+  color: var(--primary);
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button::before {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  content: "";
+  background-image: var(--bs-accordion-btn-icon);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+  transform: rotate(-90deg);
+}
+
+.footer__section .up__arrow img {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .footer__section .up__arrow img {
+    display: block;
+  }
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container navbar-expand-lg navbar-light py-5">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="/assets/img/logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler bg-secondary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto indent">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="course.html">COURSES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portofolio.html">PORTOFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tracker.html">TRACKER</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CONTACT US SECTION ============================================================================= -->
+    <section class="about__us bg-primary py-3">
+      <div class="container">
+        <h1 class="title__about text-white">Contact Us</h1>
+      </div>
+    </section>
+
+    <!-- MAP SECTION ============================================================================= -->
+    <section class="map__section mt-5">
+      <div class="container">
+        <div class="map__item text-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2489326421523!2d106.82203311534548!3d-6.230877995489687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e280f2709d%3A0xa02c02a9fd0cba07!2sSopo%20Del%20Office%20Towers%20%26%20Lifestyle!5e0!3m2!1sen!2sid!4v1671700249370!5m2!1sen!2sid"
+            width="100%"
+            height="650"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION ============================================================================= -->
+    <section class="contact__section mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="col__item__left">
+              <form action="#">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name*</label>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control border border-end-0"
+                      id="name"
+                      aria-describedby="nameHelp"
+                      required
+                    />
+                    <span
+                      class="input-group-text bg-transparent border border-left-0"
+                      id="nameHelp"
+                      ><i class="fa-solid fa-user"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email*</label>
+                  <div class="input-group">
+                    <input
+                      type="email"
+                      class="form-control border border-end-0"
+                      id="email"
+                      aria-describedby="emailHelp"
+                      required
+                    />
+                    <span
+                      class="input-group-text bg-transparent border border-left-0"
+                      ><i class="fa-solid fa-envelope"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    aria-describedby="subjectHelp"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message">Message*</label>
+                  <div class="input-group">
+                    <textarea
+                      class="form-control border border-end-0"
+                      id="message"
+                      style="height: 100px"
+                      aria-describedby="messageHelp"
+                      required
+                    >
+                    </textarea>
+                    <span
+                      class="input-group-text bg-transparent border border-left-0 align-items-start"
+                      ><i class="fa-solid fa-pencil"></i
+                    ></span>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary rounded-0 px-3">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col__item__right">
+              <h3 class="title__contact mb-3">Contact Info</h3>
+              <p class="contact__subtitle mb-3 fw-bold">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam,
+                dolores! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Ducimus, maxime.
+              </p>
+              <p class="contact__subtitle mb-2 text-secondary">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus beatae, amet nulla vel recusandae quos eos quibusdam
+                maiores impedit excepturi corrupti a ab distinctio sit ipsam cum
+                velit officia laboriosam.
+              </p>
+              <p class="address__text mb-0">SEA Digital Talent</p>
+              <p class="address__text mb-0">PCP Tower,</p>
+              <p class="address__text mb-0">Indonesia, ABC 12 Kav 11.</p>
+              <p class="address__text mb-0 text-black-50">
+                Telephone: +1 234 567 890
+              </p>
+              <p class="address__text mb-0 text-black-50">
+                FAX: +1 234 567 890
+              </p>
+              <p class="address__text mb-0 text-black-50">
+                E-mail:
+                <a
+                  class="text-primary text-decoration-none"
+                  href="mailto:arief.saferman@shopee.com"
+                  target="_blank"
+                  >mail@sitename.org</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION ============================================================================= -->
+    <section class="footer__section mt-5 bg-primary">
+      <div class="container">
+        <div class="row text-white">
+          <div class="col-lg-3">
+            <p class="fw-bold mb-5 mt-5">Our Contact</p>
+            <p class="fw-bold">SEA Digitalent</p>
+            <p>PCP tower</p>
+            <p>Pin-21542 Indonesia ID.</p>
+            <p>(123) 456-789-1255-12584</p>
+            <p>email@domainname.com</p>
+          </div>
+          <div class="col-lg-3">
+            <p class="fw-bold mb-5 mt-5">Quick Links</p>
+            <div class="links__item">
+              <a class="text-decoration-none text-white" href="#"
+                ><p>Latest Events</p>
+              </a>
+            </div>
+            <div class="links__item">
+              <a href="#" class="text-decoration-none text-white"
+                ><p>Term and conditions</p>
+              </a>
+            </div>
+            <div class="links__item">
+              <a href="#" class="text-decoration-none text-white">
+                <p>Privacy policy</p>
+              </a>
+            </div>
+            <div class="links__item">
+              <a href="#" class="text-decoration-none text-white">
+                <p>Career</p>
+              </a>
+            </div>
+            <div class="links__item">
+              <a href="#" class="text-decoration-none text-white">
+                <p>Contact us</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <p class="fw-bold mb-5 mt-5">Latest posts</p>
+            <div class="latest__item">
+              <a href="#" class="text-decoration-none text-white">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </a>
+            </div>
+            <div class="latest__item">
+              <a href="#" class="text-decoration-none text-white">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </a>
+            </div>
+            <div class="latest__item">
+              <a href="#" class="text-decoration-none text-white">
+                <p>Lorem, ipsum dolor.</p>
+              </a>
+            </div>
+            <div class="latest__item">
+              <a href="#" class="text-decoration-none text-white">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </a>
+            </div>
+            <div class="latest__item">
+              <a href="#" class="text-decoration-none text-white">
+                <p>Lorem, ipsum dolor.</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <p class="fw-bold mb-5 mt-5">Recent News</p>
+            <div class="recent__item">
+              <a href="#" class="text-decoration-none text-white">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </a>
+            </div>
+            <div class="recent__item">
+              <a href="#" class="text-decoration-none text-white">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </a>
+            </div>
+            <div class="recent__item">
+              <a href="#" class="text-decoration-none text-white">
+                <p>Lorem, ipsum dolor.</p>
+              </a>
+            </div>
+            <div class="recent__item">
+              <a href="#" class="text-decoration-none text-white">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </a>
+            </div>
+            <div class="recent__item">
+              <a href="#" class="text-decoration-none text-white">
+                <p>Lorem, ipsum dolor.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row text-white mt-5 justify-content-between">
+          <div class="col-lg-auto">
+            <p>
+              <small
+                >&copy; SEA Digitalent Site All right reserved. Template By
+                example
+              </small>
+            </p>
+          </div>
+          <div class="col-lg-auto">
+            <div class="d-flex gap-3">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-google-plus-g"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="up__arrow d-flex align-items-end flex-column">
+        <a href="#"><img src="/assets/img/array_up.png"" alt=""></a>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/0d706b7cf3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+$secondary-color: #737373;
+$bg-color: #f9f9f9;
+$border-color: #dddddd;
+
+.filter__transaction {
+  margin-bottom: 1rem;
+  color: $secondary-color;
+
+  .filter__transaction__show {
+    gap: 1rem;
+  }
+
+  .filter__transaction__show,
+  .filter__transaction__sort {
+    label {
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+
+    select,
+    input,
+    span {
+      height: 3.125rem;
+      color: $secondary-color;
+      background-color: $bg-color;
+      border-color: $border-color;
+    }
+
+    .filter__search {
+      flex-wrap: nowrap;
+      min-width: 15.625rem;
+    }
+  }
+}

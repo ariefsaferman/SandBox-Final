@@ -1,0 +1,23 @@
+.navbar {
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-weight: 600;
+        font-size: 0.875rem;
+        &.active {
+          text-decoration: underline;
+          color: var(--bs-navbar-color);
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

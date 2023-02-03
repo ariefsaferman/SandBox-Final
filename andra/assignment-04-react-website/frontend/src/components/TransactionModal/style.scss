@@ -1,0 +1,71 @@
+$success-color: #2dc071;
+
+.modal {
+  .modal-content {
+    padding: 3.125rem 2.5rem;
+
+    .modal-header {
+      flex-direction: column;
+      gap: 1.875rem;
+      justify-content: center;
+      margin-bottom: 5rem;
+
+      .modal-title {
+        font-size: 1.875rem;
+        font-weight: 700;
+        color: $success-color;
+      }
+    }
+
+    .modal-body {
+      margin-bottom: 2.5rem;
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 0;
+
+        tr {
+          td {
+            vertical-align: middle;
+
+            &.transaction__amount {
+              font-weight: 700;
+              font-size: 1.875rem;
+            }
+
+            &:last-child {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+
+    .modal-footer {
+      gap: 1.25rem;
+      justify-content: center;
+
+      .btn {
+        border: 1px solid var(--primary);
+        background-color: transparent;
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 1.125rem;
+        padding: 0.625rem 1.25rem;
+
+        &:hover {
+          background-color: var(--primary);
+          color: #fff;
+        }
+      }
+    }
+
+    .modal-body,
+    .modal-footer,
+    .modal-header {
+      padding: 0;
+      border: 0;
+    }
+  }
+}

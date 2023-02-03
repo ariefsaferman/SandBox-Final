@@ -1,0 +1,53 @@
+.form-group {
+  margin-bottom: 1.5625rem;
+
+  label {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+  }
+
+  .form-control,
+  .form-select {
+    border-color: #4f4f4f;
+  }
+}
+
+.form__login,
+.form__register,
+.form__topup,
+.form__transfer {
+  .btn {
+    background-color: var(--primary);
+    color: white;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+  }
+}
+
+.form__topup,
+.form__transfer {
+  width: 100%;
+  max-width: 28.125rem;
+
+  label {
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
+
+  .form-control,
+  .form-select {
+    height: 3.125rem;
+  }
+
+  .form-control-lg {
+    height: 4.5rem;
+  }
+}
+
+.error {
+  color: red;
+}

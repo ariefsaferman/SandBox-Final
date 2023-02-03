@@ -1,0 +1,440 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="container"
+      >
+        <div
+          class="d-flex vh-100 flex-column align-items-center justify-content-center"
+        >
+          <h2
+            class="transfer__title"
+          >
+            Transfer
+          </h2>
+          <form
+            class="form__transfer"
+            data-testid="transfer-form"
+          >
+            <button
+              class="d-none"
+              data-bs-target="#modal"
+              data-bs-toggle="modal"
+              type="button"
+            />
+            <div
+              class="modal fade"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              data-testid="transaction-modal"
+              id="modal"
+              tabindex="-1"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered"
+              >
+                <div
+                  class="modal-content"
+                >
+                  <div
+                    class="modal-header"
+                  >
+                    <svg>
+                      success-icon.svg
+                    </svg>
+                    <h5
+                      class="modal-title text-center"
+                    >
+                      Transfer
+                       Success
+                    </h5>
+                  </div>
+                  <div
+                    class="modal-body"
+                  >
+                    <table
+                      class="table table-borderless"
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            class="align-bottom"
+                          >
+                            Amount
+                          </td>
+                          <td
+                            class="transaction__amount"
+                          />
+                        </tr>
+                        <tr>
+                          <td>
+                            Transaction Id
+                          </td>
+                          <td />
+                        </tr>
+                        <tr>
+                          <td>
+                            From
+                          </td>
+                          <td />
+                        </tr>
+                        <tr>
+                          <td>
+                            To
+                          </td>
+                          <td />
+                        </tr>
+                        <tr>
+                          <td>
+                            Description
+                          </td>
+                          <td />
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div
+                    class="modal-footer"
+                  >
+                    <button
+                      class="btn"
+                      type="button"
+                    >
+                      Print
+                    </button>
+                    <button
+                      class="btn"
+                      data-bs-dismiss="modal"
+                      type="button"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="Toastify"
+            />
+            <div
+              class="form-group"
+            >
+              <label
+                for="from"
+              >
+                From
+              </label>
+              <input
+                class="form-control"
+                data-testid="from-input"
+                disabled=""
+                type="number"
+                value=""
+              />
+            </div>
+            <div
+              class="form-group"
+            >
+              <label
+                for=""
+              >
+                To
+              </label>
+              <input
+                class="form-control"
+                name="to"
+                placeholder="To"
+                type="number"
+              />
+            </div>
+            <div
+              class="form-group"
+            >
+              <label
+                for=""
+              >
+                Amount
+              </label>
+              <input
+                class="form-control form-control-lg"
+                max="50000000"
+                min="1000"
+                name="amount"
+                placeholder="Amount"
+                type="number"
+              />
+            </div>
+            <div
+              class="form-group"
+            >
+              <label
+                for=""
+              >
+                Description
+              </label>
+              <textarea
+                class="form-control"
+                name="description"
+                placeholder="Description"
+              />
+            </div>
+            <button
+              class="btn btn-lg w-100"
+              data-testid="btn-submit"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+         
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container"
+    >
+      <div
+        class="d-flex vh-100 flex-column align-items-center justify-content-center"
+      >
+        <h2
+          class="transfer__title"
+        >
+          Transfer
+        </h2>
+        <form
+          class="form__transfer"
+          data-testid="transfer-form"
+        >
+          <button
+            class="d-none"
+            data-bs-target="#modal"
+            data-bs-toggle="modal"
+            type="button"
+          />
+          <div
+            class="modal fade"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            data-testid="transaction-modal"
+            id="modal"
+            tabindex="-1"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered"
+            >
+              <div
+                class="modal-content"
+              >
+                <div
+                  class="modal-header"
+                >
+                  <svg>
+                    success-icon.svg
+                  </svg>
+                  <h5
+                    class="modal-title text-center"
+                  >
+                    Transfer
+                     Success
+                  </h5>
+                </div>
+                <div
+                  class="modal-body"
+                >
+                  <table
+                    class="table table-borderless"
+                  >
+                    <tbody>
+                      <tr>
+                        <td
+                          class="align-bottom"
+                        >
+                          Amount
+                        </td>
+                        <td
+                          class="transaction__amount"
+                        />
+                      </tr>
+                      <tr>
+                        <td>
+                          Transaction Id
+                        </td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>
+                          From
+                        </td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>
+                          To
+                        </td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>
+                          Description
+                        </td>
+                        <td />
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div
+                  class="modal-footer"
+                >
+                  <button
+                    class="btn"
+                    type="button"
+                  >
+                    Print
+                  </button>
+                  <button
+                    class="btn"
+                    data-bs-dismiss="modal"
+                    type="button"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="Toastify"
+          />
+          <div
+            class="form-group"
+          >
+            <label
+              for="from"
+            >
+              From
+            </label>
+            <input
+              class="form-control"
+              data-testid="from-input"
+              disabled=""
+              type="number"
+              value=""
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for=""
+            >
+              To
+            </label>
+            <input
+              class="form-control"
+              name="to"
+              placeholder="To"
+              type="number"
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for=""
+            >
+              Amount
+            </label>
+            <input
+              class="form-control form-control-lg"
+              max="50000000"
+              min="1000"
+              name="amount"
+              placeholder="Amount"
+              type="number"
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for=""
+            >
+              Description
+            </label>
+            <textarea
+              class="form-control"
+              name="description"
+              placeholder="Description"
+            />
+          </div>
+          <button
+            class="btn btn-lg w-100"
+            data-testid="btn-submit"
+            type="submit"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+       
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

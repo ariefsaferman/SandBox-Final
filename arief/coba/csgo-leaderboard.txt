@@ -1,0 +1,31 @@
+﻿Country     Player                    Teams
+01 France      ZywOo            VitalityaAa
+02 Ukraine     s1mple                Natus Vincere
+03 russia      sh1ro                Gambit YoungstersGambit
+04 Russia      deko                    1WIN
+05 Brazil      saffee                FURIA
+06 Malaysia    Kaze                    ViCiFlashMVP.karnal
+07 Russia      degster                SpiritEspada
+08 United Kingdom smooya            BIGMovistar RidersEpsilon
+09 New Zealand sterling                AVANTLooking For OrgDire Wolves
+10 Turkey      XANTARES                Eternal FireSpace SoldiersBIG
+11 Hungary     torzsi                MOUZBudapest FiveMOUZ NXTSalamander
+12 China       DANK1NG                TYLOOEHOME
+13 Ukraine     SENSEi                CR4ZYProject XAkumaRun or Die
+14 Denmark     device                AstralisTSM
+15 Bosnia      HerzegovinaNiKo        G2FaZeMOUZ
+16 Indonesia   BnTeT                TYLOOGen.GEXTREMUM
+17 Brazil      coldzera                SKFaZeLuminosityMIBR
+18 Denmark     blameF                AstralisComplexityHeroicEpsilon
+19 Korea       XigN                    NKTMVP PKMVP Project
+20 New Zealand Sico                    RenegadesGrayhoundORDERKings
+21 Brazil      KSCERATO                FURIA
+22 Singapore   Benkai                BOOT-d[S]BOOTdream[S]cape
+23 Russia      Jame                    AVANGARVirtus.pro
+24 Romania     XELLOW                Nexus
+25 Australia   Texta                ChiefsAthleticoDark Sided
+26 Russia      El1an                EntropiqWinstrikeEPG
+27 Poland      mhL                     MOUZ NXTAGO
+28 Czech       oskar                MOUZSINNERSHellRaisers
+29 France      kennyS                G2EnvyTitan
+30 Poland      mantuu                OGALTERNATE aTTaXPANTHERS

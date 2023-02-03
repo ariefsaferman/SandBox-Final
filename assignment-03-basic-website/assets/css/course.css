@@ -1,0 +1,14 @@
+:root {
+  --primary: #0042c8;
+  --primary-text: #152c5b;
+  --secondary-text: #717171;
+  --gray-3: #828282;
+}
+
+.indent {
+  gap: 2rem;
+}
+
+.navbar-nav .nav-item .active {
+  color: var(--primary);
+}

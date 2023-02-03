@@ -1,0 +1,15 @@
+1. Show all books
+    HTTP method:GET 
+    URI path: /v1/books
+
+2. Add a new book
+    HTTP method: POST 
+    URI path: /v1/books
+
+3. Modify a book's information
+    HTTP method: PUT
+    URI path: /v1/books/:id
+
+4. Permanently delete a book
+    HTTP method: DELETE
+    URI path: /v1/books/:id

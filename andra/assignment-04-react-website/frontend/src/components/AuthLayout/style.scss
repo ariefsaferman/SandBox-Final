@@ -1,0 +1,24 @@
+.title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 3.75rem;
+}
+
+.auth__hero {
+  position: absolute;
+  right: 0;
+  width: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 2rem;
+  background-color: var(--primary);
+}
+
+@media screen and (max-width: 991px) {
+  .auth__col {
+    display: none;
+  }
+}

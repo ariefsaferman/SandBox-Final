@@ -1,0 +1,28 @@
+.navbar-nav {
+  .nav-item {
+    .nav-link {
+      &.active {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      &:hover {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      &.white {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .bg__right {
+    display: none;
+    .login__images {
+      display: none;
+    }
+  }
+}

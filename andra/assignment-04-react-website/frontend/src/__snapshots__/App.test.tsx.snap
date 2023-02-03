@@ -1,0 +1,354 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="App"
+      >
+        <div>
+          <nav
+            class="navbar navbar-expand-lg bg-transparent fixed-top"
+          >
+            <div
+              class="container"
+            >
+              <h1
+                class="navbar-brand m-0"
+              >
+                DigiWallet
+              </h1>
+              <button
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#navbarSupportedContent"
+                data-bs-toggle="collapse"
+                type="button"
+              >
+                <span
+                  class="navbar-toggler-icon"
+                />
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarSupportedContent"
+              >
+                <ul
+                  class="navbar-nav"
+                >
+                  <li
+                    class="nav-item"
+                  >
+                    <a
+                      class="nav-link"
+                      href="/"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li
+                    class="nav-item ms-lg-5"
+                  >
+                    <a
+                      aria-current="page"
+                      class="nav-link text-white active"
+                      href="/login"
+                    >
+                      Login
+                    </a>
+                  </li>
+                  <li
+                    class="nav-item ms-lg-5"
+                  >
+                    <a
+                      class="nav-link text-white"
+                      href="/register"
+                    >
+                      Register
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div
+            class="container"
+          >
+            <div
+              class="row vh-100"
+            >
+              <div
+                class="col-lg-6 d-flex flex-column justify-content-center"
+              >
+                <h2
+                  class="title"
+                >
+                  Login
+                </h2>
+                <form
+                  class="form__login"
+                >
+                  <div
+                    class="form-group"
+                  >
+                    <label
+                      class="fw-bold"
+                      for="email"
+                    >
+                      Email
+                    </label>
+                    <input
+                      class="form-control form-control-lg"
+                      id="email"
+                      name="email"
+                      placeholder="asep.bc@gmail.com"
+                      type="email"
+                    />
+                  </div>
+                  <div
+                    class="form-group"
+                  >
+                    <label
+                      class="fw-bold"
+                      for="password"
+                    >
+                      Password
+                    </label>
+                    <input
+                      class="form-control form-control-lg"
+                      id="password"
+                      name="password"
+                      placeholder="********"
+                      type="password"
+                    />
+                  </div>
+                  <button
+                    class="btn btn-lg w-100"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+              <div
+                class="col-lg-6 auth__col"
+              >
+                <div
+                  class="auth__hero"
+                >
+                  <img
+                    alt="Auth"
+                    src="undraw_login_re_4vu2 1.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="App"
+    >
+      <div>
+        <nav
+          class="navbar navbar-expand-lg bg-transparent fixed-top"
+        >
+          <div
+            class="container"
+          >
+            <h1
+              class="navbar-brand m-0"
+            >
+              DigiWallet
+            </h1>
+            <button
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              class="navbar-toggler"
+              data-bs-target="#navbarSupportedContent"
+              data-bs-toggle="collapse"
+              type="button"
+            >
+              <span
+                class="navbar-toggler-icon"
+              />
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul
+                class="navbar-nav"
+              >
+                <li
+                  class="nav-item"
+                >
+                  <a
+                    class="nav-link"
+                    href="/"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li
+                  class="nav-item ms-lg-5"
+                >
+                  <a
+                    aria-current="page"
+                    class="nav-link text-white active"
+                    href="/login"
+                  >
+                    Login
+                  </a>
+                </li>
+                <li
+                  class="nav-item ms-lg-5"
+                >
+                  <a
+                    class="nav-link text-white"
+                    href="/register"
+                  >
+                    Register
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div
+          class="container"
+        >
+          <div
+            class="row vh-100"
+          >
+            <div
+              class="col-lg-6 d-flex flex-column justify-content-center"
+            >
+              <h2
+                class="title"
+              >
+                Login
+              </h2>
+              <form
+                class="form__login"
+              >
+                <div
+                  class="form-group"
+                >
+                  <label
+                    class="fw-bold"
+                    for="email"
+                  >
+                    Email
+                  </label>
+                  <input
+                    class="form-control form-control-lg"
+                    id="email"
+                    name="email"
+                    placeholder="asep.bc@gmail.com"
+                    type="email"
+                  />
+                </div>
+                <div
+                  class="form-group"
+                >
+                  <label
+                    class="fw-bold"
+                    for="password"
+                  >
+                    Password
+                  </label>
+                  <input
+                    class="form-control form-control-lg"
+                    id="password"
+                    name="password"
+                    placeholder="********"
+                    type="password"
+                  />
+                </div>
+                <button
+                  class="btn btn-lg w-100"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div
+              class="col-lg-6 auth__col"
+            >
+              <div
+                class="auth__hero"
+              >
+                <img
+                  alt="Auth"
+                  src="undraw_login_re_4vu2 1.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

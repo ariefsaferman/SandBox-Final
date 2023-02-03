@@ -1,0 +1,131 @@
+p.demonstration-section {
+  margin: 10rem 0 0.5rem;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+}
+
+/* ABOVE SECTION FOR DEMONSTRATION PURPOSE */
+
+body {
+  background-color: gray;
+}
+
+p {
+  font-weight: bold;
+}
+
+/* CSS SELECTOR DEMONSTRATION */
+.active {
+  text-decoration: underline;
+}
+
+div {
+  padding: 1rem;
+}
+
+.container {
+  border: 1px solid black;
+  margin: 1rem;
+}
+
+.card {
+  background-color: antiquewhite;
+}
+
+h3.title {
+  font-size: 2rem;
+}
+
+#main {
+  font-style: italic;
+}
+
+/* PSEUDO CLASS AND ELEMENTS DEMONSTRATION ==================== */
+.hover {
+  padding: 1rem;
+}
+
+.hover:hover {
+  background-color: blue;
+}
+
+a:visited {
+  color: black;
+}
+
+li:first-child {
+  color: red;
+}
+
+.lorem::first-line {
+  color: yellow;
+}
+
+.lorem::first-letter {
+  font-size: 2rem;
+}
+
+.lorem::before {
+  content: "Haloo!";
+  width: 300px;
+  height: 300px;
+  background-color: cyan;
+}
+
+/* BOX MODEL DEMONSTRATION ==================== */
+.circle {
+  margin: 1rem;
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  background-color: orange;
+}
+
+.box {
+  width: 300px;
+  background-color: pink;
+  padding: 1rem;
+  border: 0.5rem solid black;
+  margin: 2rem;
+}
+
+/* POSITION DEMONSTRATION ==================== */
+.position {
+  position: relative;
+  border: 3px solid green;
+  padding-bottom: 1000px;
+}
+
+.position__item {
+  border: 1px solid blue;
+}
+
+.position-relative {
+  position: relative;
+  left: 20px;
+}
+
+.position-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.position-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.position-sticky {
+  color: pink;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+/* DEBUGGING DEMONSTRATION ==================== */
+.card__item {
+  border: 1px solid #ccc;
+  margin-bottom: 10rem;
+}

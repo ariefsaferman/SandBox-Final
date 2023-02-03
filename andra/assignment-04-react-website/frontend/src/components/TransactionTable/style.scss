@@ -1,0 +1,31 @@
+.transaction__table {
+  .table-striped {
+    thead {
+      th {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 3rem;
+      }
+    }
+
+    th,
+    td {
+      padding: 0.75rem 1.25rem;
+    }
+
+    .transaction__debit {
+      &::before {
+        content: "- ";
+      }
+    }
+
+    .transaction__credit {
+      &::before {
+        content: "+ ";
+        color: #219653;
+      }
+
+      color: #219653;
+    }
+  }
+}

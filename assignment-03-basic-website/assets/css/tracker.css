@@ -1,0 +1,56 @@
+:root {
+  --primary: #0042c8;
+  --primary-text: #152c5b;
+  --secondary-text: #717171;
+  --gray-3: #828282;
+}
+
+a {
+  color: rgb(107, 7, 179);
+}
+
+.box__tracker .card .card__subtitle {
+  font-size: 5rem;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+}
+
+.card {
+  width: 40rem;
+  border-top-right-radius: 80px 80px;
+  border-bottom-left-radius: 80px 80px;
+  border-top-left-radius: 40px 40px;
+  border-bottom-right-radius: 40px 40px;
+}
+
+.color__shadow {
+  box-shadow: 10px 10px 20px rgba(16, 15, 15, 0.563);
+}
+
+.card-body .income__number {
+  color: green;
+}
+
+.card-body .expense__number {
+  color: red;
+}
+
+.button__transaction .btn {
+  font-size: 20px;
+  background-color: #152c5b;
+}
+
+.delete__icon {
+  display: none;
+}
+
+tr:hover .delete__icon {
+  display: block;
+}
+
+.fa-x {
+  color: red;
+}
